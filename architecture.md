@@ -6,30 +6,49 @@ Date Series Finder is a CLI-based Claude AI Agent demo.
 
 The application recommends a TV series for a date night based on Instagram-like profile data and checks where the series is available.
 
-## Flow
+                User
 
-User
-  |
-  v
-CLI - main.py
-  |
-  v
-scan_instagram_profile()
-  |
-  v
-Prompt Builder
-  |
-  v
-Claude API
-  |
-  v
-Recommended TV Series
-  |
-  v
-find_streaming_service()
-  |
-  v
-Final CLI Output
+                  │
+
+                  ▼
+
+        main.py (CLI)
+
+                  │
+
+                  ▼
+
+      scan_instagram_profile()
+
+                  │
+
+                  ▼
+
+        Build Claude Prompt
+
+                  │
+
+                  ▼
+
+           Claude API
+
+                  │
+
+                  ▼
+
+      Recommended TV Series
+
+                  │
+
+                  ▼
+
+      find_streaming_service()
+
+                  │
+
+                  ▼
+
+        Final Console Output
 
 ## Components
 

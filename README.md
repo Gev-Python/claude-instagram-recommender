@@ -1,3 +1,29 @@
+## Architecture
+
+User
+
+↓
+
+CLI (main.py)
+
+↓
+
+Instagram Scanner
+
+↓
+
+Claude API
+
+↓
+
+Streaming Lookup
+
+↓
+
+Console Output
+
+
+
 # Date Series Finder
 
 AI CLI application built with Python and Claude API.

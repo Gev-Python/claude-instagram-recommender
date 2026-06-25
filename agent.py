@@ -87,6 +87,9 @@ def run_claude_agent(username: str) -> str:
         date_tip = "Create a cozy evening atmosphere and enjoy the series together."
 
     streaming = find_streaming_service(series)
+    if not streaming["available"]:
+        series = "Emily in Paris"
+        streaming = find_streaming_service(series)
 
     interests = "\n".join(
         f"- {interest}"
